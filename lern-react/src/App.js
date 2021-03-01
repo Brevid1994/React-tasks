@@ -1,10 +1,22 @@
 // import logo from './logo.svg';
 import './App.css';
 
+// class work 2
 import TextChanges from './Components/ClassWork2/TextChanges.js';
 import ChengeSymbol from './Components/ClassWork2/ChengeSymbol.js';
-import Square from './Components/Homework2/Square.js'
-import Italic from './Components/Homework2/Italic.js'
+
+// Homework 2
+import Square from './Components/Homework2/Square.js';
+import Italic from './Components/Homework2/Italic.js';
+
+// Class work 3
+import Loading from './Components/ClassWork3/Spiner.js';
+import LoadingProps from './Components/ClassWork3/SpinerWithProps.js';
+import Ingridients from './Components/ClassWork3/BurgerMenu'
+
+// Homework 3
+
+// Homework 4
 
 
 
@@ -24,6 +36,11 @@ function App() {
       <Square cssClass='small' label='small'/>
 
       <Italic/> 
+
+      <Loading/>
+      <LoadingProps/>
+
+      <Ingridients/>
 
     </div>
   );
