@@ -4,13 +4,14 @@ import './App.css';
 import TextChanges from './Components/ClassWork2/TextChanges.js';
 import ChengeSymbol from './Components/ClassWork2/ChengeSymbol.js';
 import Square from './Components/Homework2/Square.js'
+import Italic from './Components/Homework2/Italic.js'
 
 
 
 function App() {
   return (
     <div className="App">
-      
+
       <TextChanges text='asd' size='25' color='red' />
       <TextChanges text='aasdassd' size='20' color='black' />
       <TextChanges text='aasdassd' size='30' color='green' />
@@ -21,6 +22,8 @@ function App() {
       <Square cssClass='big' label='big'/>
       <Square cssClass='medium' label='medium'/>
       <Square cssClass='small' label='small'/>
+
+      <Italic/> 
 
     </div>
   );

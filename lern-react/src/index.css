@@ -59,3 +59,17 @@ code {
   background: darkgoldenrod;
   border: 3px solid black;
 }
+
+.standart {
+  height: 100px;
+  width: 100px;
+  background: darkkhaki;  
+  font-style: normal;
+}
+
+.italic{
+  height: 100px;
+  width: 100px;
+  background: darkkhaki;
+  font-style: italic;
+}
