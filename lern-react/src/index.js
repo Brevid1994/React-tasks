@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+
+// import square from './Compomemts/Homework2'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
