@@ -5,10 +5,20 @@ class LogIn extends React.Component{
         isSignedIn: false,
     }
 
+    changeState = () => {
+        setTimeout( () => {
+            this.setState ( {isSignedIn: !this.state.isSignedIn} )
+        }, 3000); 
+
+    }
+
 
     render(){
         return(
-            <button>Sign In</button>
+            !this.state.isSignedIn ? (
+            <button onClick = { this.changeState }>Sign In</button>
+            ) : ( <p onClick = { this.changeState }>Hello user</p>
+            )
         )
     }
 }

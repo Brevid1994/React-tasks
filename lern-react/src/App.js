@@ -15,7 +15,7 @@ import LoadingProps from './Components/ClassWork3/SpinerWithProps.js';
 import Ingridients from './Components/ClassWork3/BurgerMenu'
 
 // Homework 3
-import SigIn from './Components/Homework3/LogIn'
+import LogIn from './Components/Homework3/LogIn'
 
 
 // Homework 4
@@ -44,7 +44,7 @@ function App() {
 
       <Ingridients/>
 
-      <SignIn />
+      <LogIn />
 
     </div>
   );
