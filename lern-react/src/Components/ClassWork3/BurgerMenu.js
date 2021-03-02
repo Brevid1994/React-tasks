@@ -5,12 +5,21 @@ class Ingridients extends React.Component {
 
     state = {
       items: false,
-      ingridients: [1, 2, 3, 4]
+      ingridients: ['apple', 'orange', 'ananas', 'banana'],
+      quantity: 0,
     }
   
     startLoading = () => {
       this.setState ( {items: !this.state.items } )
+    }
 
+    addIngridient = () => {
+      this.setState( {quantity: this.state.quantity + 1 })
+
+    }
+
+    deleteIngridient = () => {
+      this.setState( {quantity: this.state.quantity - 1 })
     }
   
     render(){
@@ -20,7 +29,13 @@ class Ingridients extends React.Component {
         ) : (
           <div onClick = { this.startLoading } >Close ^
           { this.state.ingridients.map( (ingridients) => {
-              return <li> { ingridients } </li>
+              return <li> { ingridients } 
+                <div>
+                  <button onClick = { this.addIngridient }>+</button>
+                  { this.state.quantity }
+                  <button onClick = { this.deleteIngridient }>-</button>
+                </div>
+              </li>
           })}
           </div>
         )
