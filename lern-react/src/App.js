@@ -24,6 +24,7 @@ import Users from './Components/Homework3/Users'
 
 // Practice
 import names from './names.json'
+import RandomUser from './Components/Practice/Names.js'
 
 
 
@@ -75,6 +76,9 @@ function App() {
       <p className='stop-task'></p>
 
       { console.log(names) }
+      
+      <RandomUser/>
+      
 
 
     </div>
