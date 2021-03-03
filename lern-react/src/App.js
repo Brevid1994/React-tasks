@@ -22,6 +22,9 @@ import Users from './Components/Homework3/Users'
 
 // Homework 4
 
+// Practice
+import names from './names.json'
+
 
 
 function App() {
@@ -70,6 +73,8 @@ function App() {
       <Users />
 
       <p className='stop-task'></p>
+
+      { console.log(names) }
 
 
     </div>
