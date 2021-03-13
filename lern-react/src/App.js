@@ -1,4 +1,10 @@
-// import logo from './logo.svg';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
 
 // class work 2
@@ -16,7 +22,6 @@ import Ingridients from './Components/ClassWork3/BurgerMenu'
 
 // Homework 3
 import LogIn from './Components/Homework3/LogIn'
-import data from './data.json'
 import Users from './Components/Homework3/Users'
  
 
@@ -25,76 +30,120 @@ import SayHello from './Components/Homework4/Greetings'
 import Bindning from './Components/Homework4/Bindning'
 
 // Practice
-import names from './names.json'
 import RandomUser from './Components/Practice/Names.js'
 
 
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <Router>
+      <div>
+        <nav>
+          <ul className='router-block'>
 
-      <p className='stop-task'></p>
+            <ul>Class Work2
+              <li><Link to="/TextChanges">TextChanges</Link></li>
+              <li><Link to="/ChengeSymbol">ChengeSymbol</Link></li>
+            </ul>
 
-      <TextChanges text='asd' size='25' color='red' />
-      <TextChanges text='aasdassd' size='20' color='black' />
-      <TextChanges text='aasdassd' size='30' color='green' />
-      <TextChanges text='asasdasd' size='15' color='blue' underline ='underline'/> 
+            <ul>Class Work 3
+              <li><Link to="/Loading">Loading</Link></li>
+              <li><Link to="/LoadingProps">LoadingProps</Link></li>
+              <li><Link to="/Ingridients">Ingridients</Link></li>
+            </ul>
 
-      <p className='stop-task'></p>
+            <ul>Homework 2
+              <li><Link to="/Square">Square</Link></li>
+              <li><Link to="/Italic">Italic</Link></li>
+            </ul>
 
-      <ChengeSymbol/>
+            <ul>Homework 3
+              <li><Link to="/LogIn">LogIn</Link></li>
+              <li><Link to="/Users">Users</Link></li>
 
-      <p className='stop-task'></p>
+            </ul>
 
+            <ul>Homework 4
+              <li><Link to="/SayHello">SayHello</Link></li>
+              <li><Link to="/Bindning">Bindning</Link></li>
+            </ul>
 
-      <Square cssClass='big' label='big'/>
-      <Square cssClass='medium' label='medium'/>
-      <Square cssClass='small' label='small'/>
+            <ul>Homework 5
+              <li></li>
+            </ul>
 
-      <p className='stop-task'></p>
+            <ul>Practise
+              <li><Link to="/RandomUser">RandomUser</Link></li>
+            </ul>
 
+          </ul>
+        </nav>
 
-      <Italic/> 
+        <Switch>
 
-      <p className='stop-task'></p>
+          <Route path="/TextChanges">
+            <TextChanges text='asd' size='25' color='red' />
+            <TextChanges text='aasdassd' size='20' color='black' />
+            <TextChanges text='aasdassd' size='30' color='green' />
+            <TextChanges text='asasdasd' size='15' color='blue' underline ='underline'/> 
+          </Route>
 
+          <Route path="/ChengeSymbol">
+            <ChengeSymbol />
+          </Route>
 
-      <Loading/>
-      <LoadingProps/>
+          <Route path="/Loading">
+            <Loading />
+          </Route>
 
-      <p className='stop-task'></p>
+          <Route path="/LoadingProps">
+            <LoadingProps />
+          </Route>
 
+          <Route path="/Ingridients">
+            <Ingridients />
+          </Route>
 
-      <Ingridients/>
+          <Route path="/Square">
+            <Square cssClass='big' label='big'/>
+            <Square cssClass='medium' label='medium'/>
+            <Square cssClass='small' label='samll'/>
+          </Route>
 
-      <p className='stop-task'></p>
+          <Route path="/Italic">
+            <Italic />
+          </Route>
 
+          <Route path="/LogIn">
+            <LogIn />
+          </Route>
 
-      <LogIn />
-      { console.log( data ) }
+          <Route path="/Users">
+            <Users />
+          </Route>
 
-      <p className='stop-task'></p>
+          <Route path="/SayHello">
+            <SayHello />
+          </Route>
 
-      <Users />
+          <Route path="/Bindning">
+            <Bindning />
+          </Route>
 
-      <p className='stop-task'></p>
+          <Route path="/RandomUser">
+            <RandomUser />
+          </Route>
 
-      { console.log(names) }
-      
-      <RandomUser/>
+          <Route path="/">
+            <Home />
+          </Route>
 
-      <p className='stop-task'></p>
-      
-      <SayHello />
-
-      <p className='stop-task'></p>
-
-      <Bindning />
-
-
-    </div>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
-export default App;
+function Home() {
+  return <h2>Home</h2>;
+}

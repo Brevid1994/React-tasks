@@ -19,7 +19,7 @@ const TextChanges = ( props ) => {
 
   return <p 
     style = { style }>
-      111
+      Some text
     {props.text} 
     </p>
 
