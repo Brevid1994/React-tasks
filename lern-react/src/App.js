@@ -21,7 +21,8 @@ import Users from './Components/Homework3/Users'
  
 
 // Homework 4
-import SayHello from './Components/Homework-4/Greetings'
+import SayHello from './Components/Homework4/Greetings'
+import Bindning from './Components/Homework4/Bindning'
 
 // Practice
 import names from './names.json'
@@ -83,6 +84,10 @@ function App() {
       <p className='stop-task'></p>
       
       <SayHello />
+
+      <p className='stop-task'></p>
+
+      <Bindning />
 
 
     </div>

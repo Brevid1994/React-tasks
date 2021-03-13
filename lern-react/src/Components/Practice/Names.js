@@ -14,14 +14,14 @@ class RandomUser extends React.Component {
     }
 
     render () {
-        return (
-            <div>
-                { this.state.people.map((item) => {
-                return <div>{item}</div>
-                })}
-                <button onClick = { this.onAddRandomName } >Add name</button>
-            </div>
-        )
+        return 1
+            // <div>
+            //     { this.state.people.map((item) => {
+            //         return <div key = { item._id }>{item}</div>
+            //     })}
+            //     <button onClick = { this.onAddRandomName } >Add name</button>
+            // </div>
+        
     }
 }
 
