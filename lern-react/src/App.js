@@ -21,6 +21,7 @@ import Users from './Components/Homework3/Users'
  
 
 // Homework 4
+import SayHello from './Components/Homework-4/Greetings'
 
 // Practice
 import names from './names.json'
@@ -78,7 +79,10 @@ function App() {
       { console.log(names) }
       
       <RandomUser/>
+
+      <p className='stop-task'></p>
       
+      <SayHello />
 
 
     </div>

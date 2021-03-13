@@ -8,13 +8,9 @@ class RandomUser extends React.Component {
     }
 
     onAddRandomName = () => {
-
         const index = Math.floor(Math.random() * 13)
-
         const newPeopleList = [...this.state.people, names]
-
         this.setState({people: newPeopleList })
-
     }
 
     render () {
@@ -23,7 +19,6 @@ class RandomUser extends React.Component {
                 { this.state.people.map((item) => {
                 return <div>{item}</div>
                 })}
-
                 <button onClick = { this.onAddRandomName } >Add name</button>
             </div>
         )
