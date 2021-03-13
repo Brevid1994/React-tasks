@@ -16,7 +16,7 @@ import Square from './Components/Homework2/Square';
 import Italic from './Components/Homework2/Italic';
 
 // Class work 3
-import Loading from './Components/ClassWork3/Spiner';
+import Loading from './Components/ClassWork3/spiner';
 import LoadingProps from './Components/ClassWork3/SpinerWithProps';
 import Ingridients from './Components/ClassWork3/BurgerMenu'
 
