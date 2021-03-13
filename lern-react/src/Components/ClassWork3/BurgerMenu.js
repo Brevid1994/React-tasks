@@ -27,16 +27,18 @@ class Ingridients extends React.Component {
         !this.state.items ? (
           <div onClick = { this.startLoading }>Ingridients ^ </div>
         ) : (
-          <div onClick = { this.startLoading } >Close ^
-          { this.state.ingridients.map( (ingridients) => {
-              return <li> { ingridients } 
-                <div>
-                  <button onClick = { this.addIngridient }>+</button>
-                  { this.state.quantity }
-                  <button onClick = { this.deleteIngridient }>-</button>
-                </div>
-              </li>
-          })}
+          <div>
+          { this.state.ingridients.map( (item) => {
+              return(
+                <li> { item } 
+                  <div key = {item._id}>
+                    <button onClick = { this.addIngridient }>+</button>
+                    { this.state.quantity }
+                    <button onClick = { this.deleteIngridient }>-</button>
+                  </div>
+                </li>
+              )})}
+            <span onClick = { this.startLoading}>Close</span>
           </div>
         )
       )
