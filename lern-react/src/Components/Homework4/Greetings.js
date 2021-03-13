@@ -9,7 +9,7 @@ class SayHello extends React.Component {
 
     onRunTimer = () => {
         setTimeout( this.sayHello, 3000);
-        this.setState({ loader: true })
+        this.setState({ loader: true, greet: '' })
     }
 
     sayHello = () => {
@@ -19,10 +19,10 @@ class SayHello extends React.Component {
 
     render(){
         return(
-            <div>
-                <button onClick={ this.onRunTimer } >Say hi</button>
+            <div className = 'greeting-block'>
+                <button onClick={ this.onRunTimer } className = 'greeting-button'>Say hi</button>
                 {this.state.loader && <div className='loader'></div>}
-                <span>{this.state.greet}</span>
+                <span className = 'greeting'>{this.state.greet}</span>
             </div>
         )
     }

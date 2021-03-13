@@ -17,11 +17,14 @@ const TextChanges = ( props ) => {
   };
   
 
-  return <p 
-    style = { style }>
-      Some text
-    {props.text} 
-    </p>
+  return(
+    <div className='dif-text'>
+      <p style = { style }>
+      {props.text} 
+      </p>
+    </div>
+
+  ) 
 
 }
 

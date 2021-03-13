@@ -15,10 +15,13 @@ class LogIn extends React.Component{
 
     render(){
         return(
-            !this.state.isSignedIn ? (
-            <button onClick = { this.changeState }>Sign In</button>
-            ) : ( <p onClick = { this.changeState }>Hello user</p>
-            )
+            <div className='signIn-block'>
+                {!this.state.isSignedIn ? (
+                    <button onClick = { this.changeState } className = 'signIn-button'>Sign In</button>
+                        ) : ( 
+                    <p onClick = { this.changeState } className = 'sigIn-greet'>Hello user</p>)}
+            </div>
+
         )
     }
 }

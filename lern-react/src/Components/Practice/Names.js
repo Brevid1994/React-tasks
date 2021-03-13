@@ -14,7 +14,7 @@ class RandomUser extends React.Component {
     // }
 
     render () {
-        return "TASK WITN ADDING RANDOM USER IN PROGRESS"
+        return <p className = 'critical-error'>TASK WITN ADDING RANDOM USER IN PROGRESS</p> 
             // <div>
             //     { this.state.people.map((item) => {
             //         return <div key = { item._id }>{item}</div>

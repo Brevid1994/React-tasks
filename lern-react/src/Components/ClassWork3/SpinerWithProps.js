@@ -4,11 +4,13 @@ const LoadingProps = ( props ) => {
 
 
     return (
-      !props.load ? (
+        <div className = 'spiner-block'>{
+            !props.load ? (
             <button className='button'>LOAD</button>
                 ) : (
             <div className='loader loader-animated' ></div>
-            )
+            )}
+        </div>
         )
     }
 
