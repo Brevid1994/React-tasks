@@ -35,45 +35,42 @@ import RandomUser from './Components/Practice/Names.js'
 
 
 export default function App() {
+  
   return (
     <Router>
       <div>
         <nav>
           <ul className='router-block'>
 
-            <ul>Class Work2
-              <li><Link to="/TextChanges">TextChanges</Link></li>
-              <li><Link to="/ChengeSymbol">ChengeSymbol</Link></li>
+            <ul className='work'>Class Work2
+              <li className='router-item'><Link to="/TextChanges" className='router-item'>TextChanges</Link></li>
+              <li className='router-item'><Link to="/ChengeSymbol" className='router-item'>ChengeSymbol</Link></li>
             </ul>
 
-            <ul>Class Work 3
-              <li><Link to="/Loading">Loading</Link></li>
-              <li><Link to="/LoadingProps">LoadingProps</Link></li>
-              <li><Link to="/Ingridients">Ingridients</Link></li>
+            <ul className='work'>Class Work 3
+              <li className='router-item'><Link to="/Loading" className='router-item'>Loading</Link></li>
+              <li className='router-item'><Link to="/LoadingProps" className='router-item'>LoadingProps</Link></li>
+              <li className='router-item'><Link to="/Ingridients" className='router-item'>Ingridients</Link></li>
             </ul>
 
-            <ul>Homework 2
-              <li><Link to="/Square">Square</Link></li>
-              <li><Link to="/Italic">Italic</Link></li>
+            <ul className='work'>Homework 2
+              <li className='router-item'><Link to="/Square" className='router-item'>Square</Link></li>
+              <li className='router-item'><Link to="/Italic" className='router-item'>Italic</Link></li>
             </ul>
 
-            <ul>Homework 3
-              <li><Link to="/LogIn">LogIn</Link></li>
-              <li><Link to="/Users">Users</Link></li>
+            <ul className='work'>Homework 3
+              <li className='router-item'><Link to="/LogIn" className='router-item'>LogIn</Link></li>
+              <li className='router-item'><Link to="/Users" className='router-item'>Users</Link></li>
 
             </ul>
 
-            <ul>Homework 4
-              <li><Link to="/SayHello">SayHello</Link></li>
-              <li><Link to="/Bindning">Bindning</Link></li>
+            <ul className='work'>Homework 4
+              <li className='router-item'><Link to="/SayHello" className='router-item'>SayHello</Link></li>
+              <li className='router-item'><Link to="/Bindning" className='router-item'>Bindning</Link></li>
             </ul>
 
-            <ul>Homework 5
-              <li></li>
-            </ul>
-
-            <ul>Practise
-              <li><Link to="/RandomUser">RandomUser</Link></li>
+            <ul className='work'>Practise
+              <li className='router-item'><Link to="/RandomUser" className='router-item'>RandomUser</Link></li>
             </ul>
 
           </ul>
@@ -82,10 +79,10 @@ export default function App() {
         <Switch>
 
           <Route path="/TextChanges">
-            <TextChanges text='asd' size='25' color='red' />
-            <TextChanges text='aasdassd' size='20' color='black' />
-            <TextChanges text='aasdassd' size='30' color='green' />
-            <TextChanges text='asasdasd' size='15' color='blue' underline ='underline'/> 
+            <TextChanges text='Some text' size='25' color='red' />
+            <TextChanges text='Some text' size='20' color='black' />
+            <TextChanges text='Some text' size='30' color='green' />
+            <TextChanges text='Some text' size='15' color='blue' underline ='underline'/> 
           </Route>
 
           <Route path="/ChengeSymbol">
@@ -97,7 +94,8 @@ export default function App() {
           </Route>
 
           <Route path="/LoadingProps">
-            <LoadingProps />
+            <LoadingProps load='false' />
+            <LoadingProps load='' />
           </Route>
 
           <Route path="/Ingridients">
@@ -105,9 +103,9 @@ export default function App() {
           </Route>
 
           <Route path="/Square">
-            <Square cssClass='big' label='big'/>
+            <Square cssClass='small' label='small'/>
             <Square cssClass='medium' label='medium'/>
-            <Square cssClass='small' label='samll'/>
+            <Square cssClass='big' label='big'/>
           </Route>
 
           <Route path="/Italic">
