@@ -21,6 +21,12 @@ import Users from './Components/Homework3/Users'
  
 
 // Homework 4
+import SayHello from './Components/Homework4/Greetings'
+import Bindning from './Components/Homework4/Bindning'
+
+// Practice
+import names from './names.json'
+import RandomUser from './Components/Practice/Names.js'
 
 
 
@@ -67,9 +73,24 @@ function App() {
 
       <LogIn />
       { console.log( data ) }
+
+      <p className='stop-task'></p>
+
       <Users />
 
       <p className='stop-task'></p>
+
+      { console.log(names) }
+      
+      <RandomUser/>
+
+      <p className='stop-task'></p>
+      
+      <SayHello />
+
+      <p className='stop-task'></p>
+
+      <Bindning />
 
 
     </div>
