@@ -19,9 +19,9 @@ class ChengeSymbol extends React.Component {
 
   render(){
     return (
-    <div>
-      <div onClick={this.changeSymbols}>{this.state.symbol}</div>
-      </div>
+    <div className = 'chenge-symbol-block'>
+      <span onClick={this.changeSymbols} className = 'symbol'>{this.state.symbol}</span>
+    </div>
     )
   }
 }

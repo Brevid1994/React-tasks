@@ -11,15 +11,13 @@ class Italic extends React.Component {
     makeTextItalic = () => {
         this.setState ( {decoration: !this.state.decoration} )
     }
-render(){
-    return(
-            <div onClick = { this.makeTextItalic } className = { this.state.decoration ? 'standart' : 'italic' } >
-                qwerty
-            </div> 
 
-    )
-}
-
+    render(){
+        return(
+            <div className = 'italic-block'>
+                <div onClick = { this.makeTextItalic } className = { this.state.decoration ? 'standart' : 'italic' }>Some text</div> 
+            </div>
+        )}
 }
 
 export default Italic;

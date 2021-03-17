@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: deepskyblue;
 }
 
 code {
@@ -12,12 +13,39 @@ code {
     monospace;
 }
 
+
+/* CW2 */
+
+.dif-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.chenge-symbol-block{
+  display: flex;
+  justify-content: center;
+}
+
+.symbol{
+  font-size: 500px;
+  color: red;
+}
+
+/* CW3 */
+
+.spiner-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .button {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   align-self: center;
   margin: 2rem;
-  
+  border-radius: 50%;
 }
 
 .loader {
@@ -39,6 +67,56 @@ code {
   100% { transform: rotate(360deg); }
 }
 
+.burger-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.burger-list{
+  font-size: 30px;
+}
+
+.burger-menu-item{
+  font-size: 25px;
+  border: solid 1px black;
+  color: tomato;
+  text-align: center;
+}
+
+
+/* HW2 */
+
+.italic-block{
+  display: flex;
+  justify-content: center;
+}
+
+.standart {
+  text-align: center;
+  height: 60px;
+  width: 150px;
+  font-style: normal;
+  font-size: 28px;
+  background: deeppink;  
+
+}
+
+.italic{
+  text-align: center;
+  height: 60px;
+  width: 150px;
+  font-style: italic;
+  font-size: 28px;
+  background: deeppink;
+
+}
+.square-block{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .big {
   width: 150px;
   height: 150px;
@@ -47,6 +125,7 @@ code {
 }
 
 .medium {
+  margin: 30px;
   width: 100px;
   height: 100px;
   background: cyan;
@@ -60,24 +139,69 @@ code {
   border: 3px solid black;
 }
 
-.standart {
-  height: 100px;
-  width: 100px;
-  background: darkkhaki;  
-  font-style: normal;
-}
+/* HW3 */
 
-.italic{
-  height: 100px;
-  width: 100px;
-  background: darkkhaki;
-  font-style: italic;
+.users-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 .block-for-user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 100px;
+  font-size: 20px;
+  background: coral;
+  color: white;
+  border: 0.5px solid black;
+}
+
+.signIn-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signIn-button{
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  border-radius: 40%;
+}
+
+.signIn-button:active{
+  background:crimson;
+}
+
+.sigIn-greet{
+  font-size: 230px;
+  color: white;
+}
+
+/* HW4 */
+
+.greeting-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.greeting-button{
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  margin: 2rem;
+  border-radius: 50%;
+}
+
+.greeting{
+  font-size: 230px;
+  color: white;
 }
 
 .stop-task{
@@ -99,4 +223,41 @@ code {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.router-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* HW5 */
+
+.router-block{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.work{
+  text-transform: none;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+.router-item{
+  text-transform: none;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Practise */
+
+.critical-error{
+  text-align: center;
+  font-size: 75px;
+  color:red;
 }
