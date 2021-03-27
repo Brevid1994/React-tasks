@@ -12,6 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Page */
 
 
 /* CW2 */
@@ -239,6 +240,7 @@ code {
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .work{

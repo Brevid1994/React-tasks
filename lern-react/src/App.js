@@ -29,6 +29,9 @@ import Users from './Components/Homework3/Users'
 import SayHello from './Components/Homework4/Greetings'
 import Bindning from './Components/Homework4/Bindning'
 
+// Homework 5
+import Counter from './Components/Homework5/Counter.js'
+
 // Practice
 import RandomUser from './Components/Practice/Names.js'
 
@@ -39,7 +42,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav>
+        <nav className = 'navigation'>
           <ul className='router-block'>
 
             <ul className='work'>Class Work2
@@ -67,6 +70,10 @@ export default function App() {
             <ul className='work'>Homework 4
               <li className='router-item'><Link to="/SayHello" className='router-item'>SayHello</Link></li>
               <li className='router-item'><Link to="/Bindning" className='router-item'>Bindning</Link></li>
+            </ul>
+
+            <ul className='work'>Homework 5
+              <li className = 'router-item'> <Link to="/Counter" className='router-item'>Counter</Link> </li>
             </ul>
 
             <ul className='work'>Practise
@@ -130,6 +137,10 @@ export default function App() {
 
           <Route path="/RandomUser">
             <RandomUser />
+          </Route>
+
+          <Route path ="/Counter">
+            <Counter/>
           </Route>
 
           <Route path="/">
