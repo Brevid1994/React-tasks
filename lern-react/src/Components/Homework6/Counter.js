@@ -12,10 +12,10 @@ const Counter = () => {
     }
 
     return(
-        <div>
-        <button onClick = {plus} >+</button>
-        <span>{count}</span>
-        <button onClick = {minus}>-</button>
+        <div className = 'counter-block'>
+        <button onClick = {plus} className = 'clicker'>+</button>
+        <span className='number'>{count}</span>
+        <button onClick = {minus} className = 'clicker'>-</button>
         </div>
     )
 }

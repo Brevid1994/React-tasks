@@ -30,7 +30,8 @@ import SayHello from './Components/Homework4/Greetings'
 import Bindning from './Components/Homework4/Bindning'
 
 // Homework 5
-import Counter from './Components/Homework5/Counter.js'
+import Counter from './Components/Homework6/Counter'
+import Autorization from './Components/Homework6/Autorization'
 
 // Practice
 import RandomUser from './Components/Practice/Names.js'
@@ -73,7 +74,8 @@ export default function App() {
             </ul>
 
             <ul className='work'>Homework 5
-              <li className = 'router-item'> <Link to="/Counter" className='router-item'>Counter</Link> </li>
+              <li className = 'router-item'><Link to="/Counter" className='router-item'>Counter</Link> </li>
+              <li className = 'router-item'><Link to="/Autorization" className='router-item'>LogIn</Link></li>
             </ul>
 
             <ul className='work'>Practise
@@ -141,6 +143,10 @@ export default function App() {
 
           <Route path ="/Counter">
             <Counter/>
+          </Route>
+
+          <Route path ="/Autorization">
+            <Autorization/>
           </Route>
 
           <Route path="/">
